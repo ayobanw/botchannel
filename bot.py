@@ -3,7 +3,6 @@ from telebot import types
 from telebot import apihelper
 
 # --- FIX UNTUK PYTHONANYWHERE FREE ACCOUNT ---
-apihelper.proxy = {'https': 'http://proxy.server:3128'}
 
 # 1. MASUKKAN DATA KAU
 TOKEN = '8951237964:AAH-p4DJvwsmRkt4fE1egnfkhwjCer6rS28'
