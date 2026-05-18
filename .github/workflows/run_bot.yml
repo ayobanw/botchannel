@@ -1,0 +1,29 @@
+name: ANW Store Bot Runner
+
+on:
+  schedule:
+    # Mengaktifkan bot secara berkala (Setiap 10-15 minit mengikut trafik GitHub)
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # Butang ini membolehkan abg petik suis manual kalau nak test
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Ambil Kod Dari Github
+      uses: actions/checkout@v4
+
+    - name: Sediakan Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Pasang Library Bot
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyTelegramBotAPI gspread oauth2client requests
+
+    - name: Jalankan Bot ANW Store
+      run: |
+        python bot.py
