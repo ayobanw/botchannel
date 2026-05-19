@@ -322,3 +322,24 @@ def menu_handler(message):
 
 print("Bot channel sedang berjalan...")
 bot.infinity_polling()
+
+# --- BAHAGIAN TAMBAHAN UNTUK RENDER (TAMPAL DI SINI) ---
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "ANW STORE IS ONLINE"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+t = Thread(target=run)
+t.start()
+# -----------------------------------------------------
+
+# --- PASTIKAN bot.polling() ABANG ADA PARAMETER INI ---
+# Tukar bot.polling() kepada macam ni supaya dia jalan serentak:
+bot.infinity_polling(none_stop=True)
