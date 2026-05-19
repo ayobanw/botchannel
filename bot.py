@@ -339,7 +339,6 @@ def run():
 t = Thread(target=run)
 t.start()
 # -----------------------------------------------------
-
-# --- PASTIKAN bot.polling() ABANG ADA PARAMETER INI ---
+bot = telebot.TeleBot("8951237964:AAH-p4DJvwsmRkt4fE1egnfkhwjCer6rS28")
 # Tukar bot.polling() kepada macam ni supaya dia jalan serentak:
 bot.infinity_polling(none_stop=True)
