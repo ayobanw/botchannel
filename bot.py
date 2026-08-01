@@ -5,7 +5,7 @@ from telebot import apihelper
 # --- FIX UNTUK PYTHONANYWHERE FREE ACCOUNT ---
 
 # 1. MASUKKAN DATA KAU
-TOKEN = '8951237964:AAH-p4DJvwsmRkt4fE1egnfkhwjCer6rS28'
+TOKEN = '8951237964:AAFCHd1fUIYL8w9NeehYctxyCeC57zz3ACU'
 CHANNEL_ID = -1003607814655
 bot = telebot.TeleBot(TOKEN)
 
