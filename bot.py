@@ -229,8 +229,11 @@ KOD_KERETA_3 = """🏎️ **SENARAI KOD KERETA (181-259)**
 250 Porsche Carrera GT
 253 FORD TURCKS BARU
 257 BMW M2 BARU
+258 Mercedes Benz W124
 259 FORTUNER BARU
-264 Camry Yakuza"""
+264 Camry Yakuza
+269 Toyota Supra MK3
+272 Mitsubishi 3000GT VT4"""
 
 KOD_SPOILER = """🛠️ **KOD SPOILER & BESI**
 4 - Besi ampaian
